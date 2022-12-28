@@ -3,12 +3,12 @@ package com.classylab.youtubeapi.service;
 
 import com.classylab.youtubeapi.client.YoutubeClient;
 import com.classylab.youtubeapi.model.YoutubeResponse;
-import youtube.model.Genre;
-import youtube.model.Quality;
-import youtube.model.Thumbnail;
-import youtube.model.Video;
-import youtube.repository.VideoRepository;
-import youtube.repository.ThumbnailRepository;
+import com.classylab.youtube.model.Genre;
+import com.classylab.youtube.model.Quality;
+import com.classylab.youtube.model.Thumbnail;
+import com.classylab.youtube.model.Video;
+import com.classylab.youtube.repository.VideoRepository;
+import com.classylab.youtube.repository.ThumbnailRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

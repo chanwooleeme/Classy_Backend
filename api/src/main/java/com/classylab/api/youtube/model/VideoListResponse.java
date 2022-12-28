@@ -1,7 +1,7 @@
 package com.classylab.api.youtube.model;
 
 import lombok.Getter;
-import youtube.model.Video;
+import com.classylab.youtube.model.Video;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,8 +1,8 @@
-package youtube.repository;
+package com.classylab.youtube.repository;
 
+import com.classylab.youtube.model.Thumbnail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import youtube.model.Thumbnail;
 
 @Repository
 public interface ThumbnailRepository extends JpaRepository<Thumbnail, Long> {

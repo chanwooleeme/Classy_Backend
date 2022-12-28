@@ -1,4 +1,4 @@
-package youtube.model;
+package com.classylab.youtube.model;
 
 import lombok.Getter;
 
