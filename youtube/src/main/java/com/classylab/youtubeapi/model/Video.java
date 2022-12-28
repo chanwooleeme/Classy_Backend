@@ -1,4 +1,4 @@
-package com.classylab.youtube.model;
+package com.classylab.youtubeapi.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -2,15 +2,10 @@ package com.classylab.youtubeapi.service;
 
 
 import com.classylab.youtubeapi.client.YoutubeClient;
-import com.classylab.youtubeapi.model.YoutubeResponse;
-import com.classylab.youtube.model.Genre;
-import com.classylab.youtube.model.Quality;
-import com.classylab.youtube.model.Thumbnail;
-import com.classylab.youtube.model.Video;
-import com.classylab.youtube.repository.VideoRepository;
-import com.classylab.youtube.repository.ThumbnailRepository;
+import com.classylab.youtubeapi.model.*;
+import com.classylab.youtubeapi.repository.ThumbnailRepository;
+import com.classylab.youtubeapi.repository.VideoRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,8 +19,7 @@ public class YoutubeService {
     private final VideoRepository videoRepository;
     private final ThumbnailRepository thumbnailRepository;
 
-    @Value("${youtube.api.max-page}")
-    private final Integer MAX_PAGE;
+    private Integer MAX_PAGE = 5;
     private Long relevence;
 
     public void saveYoutubeData() {

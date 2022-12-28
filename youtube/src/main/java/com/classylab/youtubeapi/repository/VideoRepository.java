@@ -1,10 +1,10 @@
-package com.classylab.youtube.repository;
+package com.classylab.youtubeapi.repository;
 
+import com.classylab.youtubeapi.model.Genre;
+import com.classylab.youtubeapi.model.Video;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.classylab.youtube.model.Genre;
-import com.classylab.youtube.model.Video;
 
 import java.util.List;
 

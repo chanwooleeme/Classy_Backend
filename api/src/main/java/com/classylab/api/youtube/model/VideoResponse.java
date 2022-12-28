@@ -1,7 +1,6 @@
 package com.classylab.api.youtube.model;
 
 import lombok.Getter;
-import com.classylab.youtube.model.Video;
 
 @Getter
 public class VideoResponse {

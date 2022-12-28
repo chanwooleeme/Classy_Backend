@@ -36,15 +36,3 @@ subprojects {
         runtimeOnly 'com.h2database:h2'
     }
 }
-
-project(':api') {
-    dependencies {
-        implementation project(':core')
-    }
-}
-
-project(':youtube') {
-    dependencies {
-        implementation project(':core')
-    }
-}

@@ -2,8 +2,7 @@ package com.classylab.api.youtube.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
-import com.classylab.youtube.model.Quality;
-import com.classylab.youtube.model.Thumbnail;
+
 
 import java.util.List;
 
