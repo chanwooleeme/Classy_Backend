@@ -1,10 +1,13 @@
-package com.classylab.youtubeapi.youtube.client.model;
+package com.classylab.youtubeapi.model;
 
-import com.classylab.youtubeapi.youtube.model.Thumbnail;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
+import youtube.model.Quality;
+import youtube.model.Thumbnail;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 @Getter
 public class YoutubeResponse {
@@ -67,18 +70,4 @@ public class YoutubeResponse {
         private Quality high;
     }
 
-    @Getter
-    public static class Quality {
-        private String url;
-        private String width;
-        private String height;
-
-        public static Quality create(Thumbnail thumbnail) {
-            Quality quality = new Quality();
-            quality.url = thumbnail.getUrl();
-            quality.width = thumbnail.getWidth();
-            quality.height = thumbnail.getHeight();
-            return quality;
-        }
-    }
 }

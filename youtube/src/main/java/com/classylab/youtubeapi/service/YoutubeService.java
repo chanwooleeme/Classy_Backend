@@ -1,12 +1,14 @@
-package com.classylab.youtubeapi.youtube.service;
+package com.classylab.youtubeapi.service;
 
-import com.classylab.youtubeapi.youtube.client.YoutubeClient;
-import com.classylab.youtubeapi.youtube.client.model.YoutubeResponse;
-import com.classylab.youtubeapi.youtube.model.Video;
-import com.classylab.youtubeapi.youtube.model.Genre;
-import com.classylab.youtubeapi.youtube.model.Thumbnail;
-import com.classylab.youtubeapi.youtube.repository.VideoRepository;
-import com.classylab.youtubeapi.youtube.repository.ThumbnailRepository;
+
+import com.classylab.youtubeapi.client.YoutubeClient;
+import com.classylab.youtubeapi.model.YoutubeResponse;
+import youtube.model.Genre;
+import youtube.model.Quality;
+import youtube.model.Thumbnail;
+import youtube.model.Video;
+import youtube.repository.VideoRepository;
+import youtube.repository.ThumbnailRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -63,10 +65,10 @@ public class YoutubeService {
             Video video = Video.create(genre, item.getTitle(), item.getChannelTitle(), item.getVideoId(), item.getPublishedAt(), ++relevence);
             video = videoRepository.save(video);
 
-            Map<String, YoutubeResponse.Quality> qualities = item.getThumbnailQualities();
+            Map<String, Quality> qualities = item.getThumbnailQualities();
 
             for (String key:qualities.keySet()) {
-                YoutubeResponse.Quality quality = qualities.get(key);
+                Quality quality = qualities.get(key);
                 Thumbnail thumbnail = Thumbnail.create(key, quality.getUrl(), quality.getWidth(), quality.getHeight());
                 thumbnail.setVideo(video);
                 thumbnailRepository.save(thumbnail);

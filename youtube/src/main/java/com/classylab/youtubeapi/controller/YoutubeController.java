@@ -1,6 +1,6 @@
-package com.classylab.youtubeapi.youtube.controller;
+package com.classylab.youtubeapi.controller;
 
-import com.classylab.youtubeapi.youtube.service.YoutubeService;
+import com.classylab.youtubeapi.service.YoutubeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
