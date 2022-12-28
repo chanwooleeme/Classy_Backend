@@ -1,4 +1,4 @@
-package com.classylab.youtubeapi.youtube.model;
+package youtube.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;

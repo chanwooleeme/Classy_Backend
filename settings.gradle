@@ -1,3 +1,6 @@
 rootProject.name = 'backend'
 
 include 'youtube'
+include 'api'
+include 'core'
+

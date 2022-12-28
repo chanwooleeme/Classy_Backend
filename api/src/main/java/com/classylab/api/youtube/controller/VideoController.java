@@ -1,7 +1,7 @@
-package com.classylab.youtubeapi.api.controller;
+package com.classylab.api.youtube.controller;
 
-import com.classylab.youtubeapi.api.model.VideoListResponse;
-import com.classylab.youtubeapi.api.service.VideoService;
+import com.classylab.api.youtube.model.VideoListResponse;
+import com.classylab.api.youtube.service.VideoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
